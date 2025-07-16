@@ -1,0 +1,26 @@
+# Environment & Utilities
+python-dotenv
+pandas
+requests
+
+# Telegram Scraping
+telethon
+
+# PostgreSQL & DBT
+psycopg2-binary
+dbt-core
+dbt-postgres
+
+# Image Processing & YOLO
+ultralytics
+opencv-python
+Pillow
+
+# API
+fastapi
+uvicorn
+pydantic
+
+# Orchestration
+dagster
+dagster-webserver
