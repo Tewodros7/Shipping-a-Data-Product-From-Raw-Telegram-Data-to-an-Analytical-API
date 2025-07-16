@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    tables:
+      - name: telegram_messages
+      - name: fct_image_detections 
+
+models:
+  - name: stg_telegram_messages
+    description: "Cleaned raw Telegram messages"
+    columns:
+      - name: message_id
+        tests:
+          - not_null
+          - unique
+
+  - name: fct_messages
+    description: "Fact table of Telegram messages"
+    columns:
+      - name: message_id
+        tests:
+          - not_null
